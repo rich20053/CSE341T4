@@ -1,0 +1,25 @@
+{
+  "name": "cse341t4",
+  "version": "1.0.0",
+  "description": "Temple API\r This API is intended for a team assignment in CSE 341 to learn how to use Swagger for API Documentation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.13.6",
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoimport": "^1.0.6",
+    "mongoose": "^8.1.1"
+  }
+}
