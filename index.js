@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-const swaggerAutogen = require('swagger-autogen')();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
@@ -15,7 +14,8 @@ app
 
 const db = require('./models');
 db.mongoose
-  .connect(db.url, {
+  //.connect(db.url, {
+  .connect("mongodb+srv://MarkWRichmond:Rayola658201@cluster0.73wwlij.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
