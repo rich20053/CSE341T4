@@ -1,4 +1,5 @@
 module.exports = (mongoose) => {
+  console.log("modelTemples");
     const Temple = mongoose.model(
       'temples',
       mongoose.Schema(

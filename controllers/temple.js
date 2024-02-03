@@ -1,6 +1,8 @@
 const db = require('../models');
 const Temple = db.temples;
 
+console.log("controllersIndex");
+
 const apiKey =
   'Ezl0961tEpx2UxTZ5v2uKFK91qdNAr5npRlMT1zLcE3Mg68Xwaj3N8Dyp1R8IvFenrVwHRllOUxF0Og00l0m9NcaYMtH6Bpgdv7N';
 
@@ -34,8 +36,9 @@ exports.create = (req, res) => {
 
 exports.findAll = (req, res) => {
   console.log(req.header('apiKey'));
-  if (req.header('apiKey') === apiKey) {
-    Temple.find(
+  //if (req.header('apiKey') === apiKey) {
+  if (true) {
+      Temple.find(
       {},
       {
         temple_id: 1,

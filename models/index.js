@@ -7,5 +7,5 @@ const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
 db.temples = require('./temples.js')(mongoose);
-
+console.log("modelIndex");
 module.exports = db;

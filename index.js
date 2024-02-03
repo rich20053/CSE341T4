@@ -5,12 +5,17 @@ const app = express();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
+console.log("index");
+
 app
   .use('/app-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use(cors())
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
-  .use('/', require('./routes'));
+  .use('/', require('./routes'))
+  //.use('/', './routes/temple');
+
+console.log("connect");
 
 const db = require('./models');
 db.mongoose
